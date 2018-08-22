@@ -95,13 +95,13 @@ class SpeakerDiarization(SpeakerDiarizationProtocol):
 # this is where we define each protocol for this database.
 # without this, `pyannote.database.get_protocol` won't be able to find them...
 
-class MyDatabase(Database):
+class Tobel(Database):
     """MyDatabase database"""
 
     def __init__(self, preprocessors={}, **kwargs):
-        super(MyDatabase, self).__init__(preprocessors=preprocessors, **kwargs)
+        super(Tobel, self).__init__(preprocessors=preprocessors, **kwargs)
 
         # register the first protocol: it will be known as
-        # MyDatabase.SpeakerDiarization.MyFirstProtocol
+        # Tobel.SpeakerDiarization.Talk
         self.register_protocol(
-            'SpeakerDiarization', 'MyFirstProtocol', SpeakerDiarization)
+            'SpeakerDiarization', 'Talk', SpeakerDiarization)
