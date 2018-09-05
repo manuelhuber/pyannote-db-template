@@ -1,3 +1,6 @@
+# Only the manuel_tobi_talk is labeled!
+The other files only contain dummy labels
+
 # pyannote.database plugin
 
 This repository provides a template for creating your own [`pyannote.database`](http://github.com/pyannote/pyannote-database) plugin.
